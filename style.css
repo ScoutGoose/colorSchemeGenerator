@@ -8,11 +8,10 @@
 /* FORM */
 
 form {
-  border: 1px solid black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
   height: 7vh;
 }
 
@@ -44,24 +43,30 @@ button {
   color: #374151;
   font-weight: 600;
   font-size: 0.75rem;
+  padding: 0 0.2rem;
 }
 
 /* COLOR GENERATOR OPTIONS */
 
 .colors-container {
   height: 40vh;
-  border: 1px solid red;
   display: flex;
 }
 
 .single-color-container {
   height: 100%;
   width: 20%;
-  border: 1px solid blue;
 }
 
 .color-option {
-  border: 1px solid green;
   height: 90%;
   width: 100%;
+}
+
+.hex-value-container {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d1d5db;
 }
