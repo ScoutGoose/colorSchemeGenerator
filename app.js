@@ -17,6 +17,7 @@ function renderColorScheme(colorHexValue, schemeMode) {
         seed,
         ...colors,
       ]);
+      copyOnClick();
     });
 }
 
@@ -34,6 +35,16 @@ function createLayout(colorsArr) {
         `;
   });
   return htmlComponents;
+}
+
+// ADDING EVENT LISTENER TO ALL HEXVALUES
+function copyOnClick() {
+  document.querySelectorAll(".hex-color").forEach((color) => {
+    color.addEventListener("click", (event) => {
+      const colorCode = event.target.textContent;
+      navigator.clipboard.writeText(colorCode);
+    });
+  });
 }
 
 // INITIAL RENDER
